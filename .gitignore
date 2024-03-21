@@ -2,3 +2,4 @@
 node_modules
 .idea
 public/build/bundle.*
+package-lock.json
