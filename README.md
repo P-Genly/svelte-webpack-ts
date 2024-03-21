@@ -4,7 +4,7 @@
 ### Intégration dans une appli Angular
 - Créer un projet Angular simple `ng new angular-with-svelte`
 - Importer dans le fichier `assets` du projet Angular les fichiers .js compilés via webpack et svelte loader (`bundle.js`, `bundle.css`)
-- Ajouter dans `angular.json` l'accès au scripts injectés :
+- Ajouter dans `angular.json` l'accès au script + css injectés :
 ```
 ...
 "styles": [
