@@ -9,6 +9,7 @@ const app = new App({
 		devList: [
 			{name: 'COGET', firstname: 'Guillaume'},
 			{name: 'NAKACHE', firstname: 'Clothilde'},
+			{name: 'DOBROWOLSKI', firstname: 'Franciszek'},
 			{name: 'GAAYA', firstname: 'Hassen'},
 			{name: 'GENLY', firstname: 'Paul'}
 		]
