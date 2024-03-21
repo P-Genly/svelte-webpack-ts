@@ -31,7 +31,9 @@ module.exports = {
 						compilerOptions: {
 							dev: !prod
 						},
-						preprocess: require('svelte-preprocess')({}),
+						preprocess: require('svelte-preprocess')({
+							typescript: true
+						}),
 						emitCss: prod,
 						hotReload: !prod
 					}
@@ -39,10 +41,8 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				use: [
-					MiniCssExtractPlugin.loader,
-					'css-loader'
-				]
+				use: prod ?
+					[MiniCssExtractPlugin.loader, 'css-loader'] : ['style-loader', 'css-loader']
 			}
 		]
 	},
